@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(Imagenes/Bosque.png);
+}
+
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Taviraj', serif;
+    text-decoration:underline;
+    margin-right: 4rem;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+
+.contenedor{
+    
+    font-family: 'Lora', serif;
+    height: auto;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+ }
+
+ main section {
+    width: 30%;
+    border: 1px black solid;
+    border-radius: 20px;
+    transition: 0.3s linear;
+ }
+
+ .card {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+ }
+
+.pendientes:hover{
+    box-shadow: 10px 10px 14px 2px black;
+    border-radius: 20px;
+}
+.card:hover{
+    box-shadow: 10px 10px 14px 2px black;
+    border-radius: 20px;
+}
+
+.progreso{
+    border-radius: 20px;
+    transition: 0.3s linear;
+   
+}
+.progreso:hover{
+    box-shadow: 10px 10px 14px 2px black;
+    border-radius: 20px;
+}
+
+
+.terminadas{
+    border-radius: 20px;
+    transition: 0.3s linear;
+}
+
+.terminadas:hover{
+    box-shadow: 10px 10px 14px 2px black;
+    border-radius: 20px;
+}
+
+.diseño{
+    font-family: 'Lora', serif;
+    border-radius: 30px;
+    background-color: #899481;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-bottom: 4rem;
+    color: #efe9e1;
+    margin-left: 120px;
+}
+.delete{
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #efe9e1;
+    background-color:#899481;
+}
+
+.edit{
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #efe9e1;
+    background-color:#899481;
+}
+
+.oscuro{
+    background-image: url(Imagenes/oscuro.png); 
+    transition-duration:0.5s;
+    color: #969ba5;
+    
+   
+   }
+
+   .contain-modalCreate , .contain-modalEdit{
+  
+    
+   
+    margin-top: 100px;
+    height: 70%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    justify-content:space-around;
+    align-items: center;
+    top: 0;
+    left: 0;         
+    background-color: #99a0a8; 
+    
+
+}
+
+.form, .formulario {
+    display:grid;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+
+
+.show-modal {
+    display:flex;
+}
+
+.show-modalEdit{
+    display: flex;
+}
+
+#create-modal{
+    border-radius: 20px;
+    margin-top: 2rem;
+    background-color: #899481;
+    font-family: 'Lora', serif;
+    color:#efe9e1;
+    margin-left: 2rem;
+    border: none;
+    padding: 5px;
+   cursor: pointer;
+   
+}
+
+#close-modal, #close-modalEdit{
+    border-radius: 10px;
+    color: white;
+    border-style:hidden;
+    background-color: #022534;
+    cursor: pointer;
+}
+   .crearTarea{
+    display: flex;  
+    justify-content: center;
+    align-items:stretch;
+    margin-right: 6rem;
+   }
+
+   .submit{
+    border-radius: 10px;
+    color: white;
+    border-style:hidden;
+    background-color: #022534;
+    cursor: pointer;
+   }
+
+   #state,#stateEdit, input{
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin: 20px;
+}

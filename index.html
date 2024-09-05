@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a1d3a383a7.js" crossorigin="anonymous"></script>
+    <link href="stilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital@1&display=swap" rel="stylesheet">
+
+    <title>App de Tareas</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="titulo"> Tareas </h1>
+
+        <button class="diseño">Cambiar de Tema</button>
+
+           <div class="crearTarea">
+
+            <div class="contain">
+
+            <button id="create-modal">Añadir Tarea</button>
+            <div class="contain-modalCreate">
+
+                <form class="form">
+                    <button type="button" id="close-modal">X</button>
+                    <div>
+                        <input id="title" type="text" placeholder="Titulo de la tarea">
+                        <span id="titleErrors"></span>
+                    </div>
+                    <div>
+                        <select id="state">
+                            <option value="" selected disabled>Seleccione un estado</option>
+                            <option value="Pendiente">Pendiente</option>
+                            <option value="En progreso">En progreso</option>
+                            <option value="Terminado">Terminado</option>
+                        </select>
+                        <span id="stateErrors"></span>
+                    </div>
+                    <button type="submit" class="submit">Crear</button>
+
+                </form>
+            </div>
+
+                <span id="formErrors"></span>
+
+            </div>
+        </div>
+
+    </header>
+
+    <section class="contain-modalEdit">
+        <div class="modal">
+            <form class="formulario">
+                <button type="button" id="close-modalEdit">X</button>
+                <div>
+                    <input id="titleEdit" type="text" placeholder="Titulo de tarea">
+                    <span id="EditError"></span>
+                </div>
+                <div>
+                    <select id="stateEdit">
+                        <option value="" disabled selected>Seleccione un estado</option>
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="En progreso">En progreso</option>
+                        <option value="Terminado">Terminado</option>
+                    </select>
+                    <span id="stateEditErrors"></span>       
+                </div>
+                <button type="submit" class="submit">Editar Tarea</button>
+            </form>
+            <span id="formErrors"></span>
+        </div>
+    </section>
+
+
+    <main class="contenedor">
+        <section class="pendientes">
+
+            
+        </section>
+        <section class="progreso">
+
+        </section>
+        <section class="terminadas">
+
+        </section>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
